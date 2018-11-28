@@ -43,9 +43,8 @@ l_listes.sort(key = lambda x : x[2])
 
 print(l_listes)
 
-''' it will Sort based on key and returns a list of sorted keys '''
-
 print('Sort a dict')
+''' it will Sort based on key and returns a list of sorted keys '''
 m_dict = {1: 'D', 0: 'B', 2: 'B', 4: 'E', 5: 'A'}
 print(sorted(m_dict))
 
