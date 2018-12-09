@@ -1,4 +1,5 @@
 import re
+import unittest
 
 '''
       9 9 9
@@ -30,7 +31,15 @@ def increment(string):
     
 
 
-if __name__ == "__main__":
-    print(increment('foobar102'))
-
+class TestIncrementString(unittest.TestCase):
     
+    def test(self):
+        self.assertEqual(increment('foo'), 'foo1')
+        self.assertEqual(increment('foobar124'), 'foobar125')
+        self.assertEqual(increment('foo002'), 'foo003')
+        self.assertEqual(increment('foo099'), 'foo100')
+        self.assertEqual(increment('foo009'), 'foo010')
+        
+
+if __name__ == "__main__":
+    unittest.main()
